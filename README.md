@@ -7,8 +7,11 @@ Allows you to use all bleeding edge typescript features - for which only ES6 tar
 When you require a `.ts` file, it is transpiled on the fly and cached to keep resonable performace.
 
 The first compilation step is through TypeScript (with `tsconfig.json` support) targetting ES6.
+
 Second compilation step is through Babel (with `.babelrc` support)
+
 As a third step, the results are ran through [sorcery](https://github.com/Rich-Harris/sorcery) which maps the last source map in the chain to the original source file.
+
 
 ## installation
 
@@ -19,6 +22,7 @@ or just
 ```
 npm i -D ereqt
 ```
+
 
 ## usage
 
@@ -51,6 +55,7 @@ Debugging is only confirmed working on Visual Studio 2015 Community (RC and abov
 
 **Note:** Production use is not recommended.
 
+
 ## Contribute
 
 I'm currently looking for ways to enable the debugging support in other IDEs.
@@ -58,5 +63,6 @@ Any ideas are welcome. If you find a way to make it work in other IDEs/debuggers
 
 Current version is far from feature complete, so please submit an issue with your ideas.
 
-# Recommendation
+
+## Recommendations
 Blacklist `regenerator` in your [.babelrc](files/.babelrc) - node supports generators for quite some time now and it makes debugging of async functions much easier
