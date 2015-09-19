@@ -3,3 +3,4 @@ node_modules/
 *.njsproj
 *.sln
 *.suo
+.ntvs_analysis.dat
