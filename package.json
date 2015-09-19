@@ -25,6 +25,7 @@
     "babel": "^5.8.23",
     "buffer-crc32": "^0.2.5",
     "inline-source-map-comment": "^1.0.5",
+    "object-assign": "^4.0.1",
     "sander": "^0.3.5",
     "strip-bom": "^2.0.0",
     "typescript": "^1.6.0",
