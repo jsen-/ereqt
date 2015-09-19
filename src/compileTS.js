@@ -21,6 +21,7 @@ module.exports = function compileTS(source, inputFileName) {
     var options = config.compilerOptions;
     options.sourceMap = true;
     options.target = ts.ScriptTarget.ES6;
+    delete options.outDir;
     
     var t = ts.transpileModule(source, { compilerOptions: options, fileName: inputFileName, reportDiagnostics: true });
     var code = t.outputText;
